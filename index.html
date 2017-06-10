@@ -2,17 +2,20 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title></title>
+		<title>初尝git</title>
+		<script src="js/jquery-3.0.0.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<div>尝试github</div>	<div>尝试github</div>
 			<button id="btn">点击</button>
 	</body>
 	<script type="text/javascript">
-		var btn = document.getElementById("btn");
-		btn.click(function  () {
-			alert("good");
+	$(function  () {
+		$("button").click(function () {
+			alert("成功提交")
 		})
+	})
+		
 		
 	</script>
 </html>
