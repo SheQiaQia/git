@@ -65,7 +65,7 @@ $(function(){
 			duration: 10000, 
 			animateTo: 2160, //这里是设置请求超时后返回的角度，所以应该还是回到最原始的位置，2160是因为我要让它转6圈，就是360*6得来的
 			callback:function(){
-				alert('网络超时')
+				alert('请重新抽奖')
 			}
 		}); 
 	}; 
@@ -94,13 +94,13 @@ $(function(){
 					var data = [1,2,3,0]; //返回的数组
 						data = data[Math.floor(Math.random()*data.length)];
 					if(data==1){
-						rotateFunc(1,157,'恭喜您抽中的一等奖')
+						rotateFunc(1,157,'恭喜您抽中的海马牌拖鞋')
 					}
 					if(data==2){
-						rotateFunc(2,247,'恭喜您抽中的二等奖')
+						rotateFunc(2,247,'还想中奖？？')
 					}
 					if(data==3){
-						rotateFunc(3,22,'恭喜您抽中的三等奖')
+						rotateFunc(3,22,'亲一下')
 					}
 					if(data==0){
 						var angle = [67,112,202,292,337];
